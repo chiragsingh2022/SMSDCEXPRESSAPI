@@ -1,0 +1,362 @@
+[
+ {
+  "voterno": 1,
+  "villageno": 1,
+  "votersname": "श्री राम पाल सिंह",
+  "fathersname": "श्री होती सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 2,
+  "villageno": 2,
+  "votersname": "श्री राम सिंह",
+  "fathersname": "श्री इन्द्रमन सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 3,
+  "villageno": 3,
+  "votersname": "श्री भूवेन्द्र सिंह",
+  "fathersname": "श्री गंगा सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 4,
+  "villageno": 4,
+  "votersname": "श्री टरमेश कुमार",
+  "fathersname": "श्री अमर सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 5,
+  "villageno": 5,
+  "votersname": "श्री गजराज सिंह",
+  "fathersname": "श्री रोशन सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 6,
+  "villageno": 6,
+  "votersname": "श्री रवेन्द्र सिंह",
+  "fathersname": "श्री वीरपाल सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 7,
+  "villageno": 7,
+  "votersname": "श्री गोकुल सिंह",
+  "fathersname": "श्री मान सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 8,
+  "villageno": 8,
+  "votersname": "श्री मती संतोष कुमारी",
+  "fathersname": "श्री प्रेमपाल सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 9,
+  "villageno": 10,
+  "votersname": "श्री भूपेन्द्र सिंह",
+  "fathersname": "श्री सूरज पाल सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 10,
+  "villageno": 11,
+  "votersname": "श्री योगेन्द्र सिंह",
+  "fathersname": "श्री चन्द्रपाल सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 11,
+  "villageno": 12,
+  "votersname": "श्री कैलाश चन्द्र",
+  "fathersname": "श्री श्याम सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 12,
+  "villageno": 13,
+  "votersname": "श्री मनीष कुमार",
+  "fathersname": "श्री वेदपाल सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 13,
+  "villageno": 14,
+  "votersname": "श्री ओम प्रकाश",
+  "fathersname": "श्री रोशन सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 14,
+  "villageno": 15,
+  "votersname": "श्री प्रदीप कुमार",
+  "fathersname": "श्री लालाराम",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 15,
+  "villageno": 16,
+  "votersname": "श्री हरिपाल सिंह",
+  "fathersname": "श्री गजेन्द्र सिंह",
+  "category": "ख",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 16,
+  "villageno": 17,
+  "votersname": "श्री ओमकार सिंह",
+  "fathersname": "श्री करन सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 17,
+  "villageno": 19,
+  "votersname": "श्री राजेन्द्र पाल सिंह",
+  "fathersname": "श्री उदल सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 18,
+  "villageno": 20,
+  "votersname": "श्री मनोज कुमार",
+  "fathersname": "श्री चन्द्रपाल सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 19,
+  "villageno": 21,
+  "votersname": "श्री दिनेश कुमार ",
+  "fathersname": "श्री चन्द्रपाल सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 20,
+  "villageno": 22,
+  "votersname": "श्री भीष्मपाल सिंह",
+  "fathersname": "श्री गंगा सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 21,
+  "villageno": 23,
+  "votersname": "श्री मती नेमवती देवी",
+  "fathersname": "श्री गंगा सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 22,
+  "villageno": 24,
+  "votersname": "श्री मती मंजू कुमारी",
+  "fathersname": "श्री योगेन्द्र सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 23,
+  "villageno": 25,
+  "votersname": "श्री मती नीलम कुमारी",
+  "fathersname": "श्री भूवेन्द्र सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 24,
+  "villageno": 26,
+  "votersname": "श्री मती सुशीला देवी",
+  "fathersname": "श्री चन्द्रपाल सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 25,
+  "villageno": 27,
+  "votersname": "श्री मती कामिनी देवी",
+  "fathersname": "श्री उमेश कुमार",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 26,
+  "villageno": 28,
+  "votersname": "श्री सुरेश सिंह",
+  "fathersname": "श्री सुजान सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 27,
+  "villageno": 29,
+  "votersname": "श्री धर्मेन्द्र कुमार ",
+  "fathersname": "श्री वेदपाल सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 28,
+  "villageno": 30,
+  "votersname": "श्री प्रेमपाल सिंह",
+  "fathersname": "श्री हरिपाल सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 29,
+  "villageno": 31,
+  "votersname": "श्री बलवीर सिंह",
+  "fathersname": "श्री हरी सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 30,
+  "villageno": 32,
+  "votersname": "श्री मुकेश कुमार",
+  "fathersname": "श्री मित्तर सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 31,
+  "villageno": 33,
+  "votersname": "श्री मती सुधा सेंगर",
+  "fathersname": "श्री गजराज सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 32,
+  "villageno": 34,
+  "votersname": "श्री मती सोनू कुमारी",
+  "fathersname": "श्री भीष्मपाल सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 33,
+  "villageno": 35,
+  "votersname": "श्री प्रतीक कुमार ",
+  "fathersname": "श्री योगेन्द्र सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 34,
+  "villageno": 36,
+  "votersname": "श्री वेदपाल सिंह",
+  "fathersname": "श्री राम सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 35,
+  "villageno": 37,
+  "votersname": "श्री महेश चन्द्र ",
+  "fathersname": "श्री जसवंत सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 36,
+  "villageno": 38,
+  "votersname": "श्री मती रीता कुमारी",
+  "fathersname": "श्री मनोज कुमार",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 37,
+  "villageno": 39,
+  "votersname": "श्री मती महारानी",
+  "fathersname": "श्री महेशचन्द्र",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 38,
+  "villageno": 40,
+  "votersname": "श्री हर्ष कुमार",
+  "fathersname": "श्री सत्यवीर सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 39,
+  "villageno": 41,
+  "votersname": "श्री जगदीश कुमार",
+  "fathersname": "श्री महेन्द्र पाल सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 40,
+  "villageno": 42,
+  "votersname": "श्री उमेश कुमार",
+  "fathersname": "श्री चन्द्रपाल सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 41,
+  "villageno": 43,
+  "votersname": "श्री प्रताप सिंह",
+  "fathersname": "श्री भूदेव सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 42,
+  "villageno": 44,
+  "votersname": "योग्यता कुमारी",
+  "fathersname": "श्री प्रदीप कुमार",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 43,
+  "villageno": 45,
+  "votersname": "श्री हरीश कुमार",
+  "fathersname": "श्री लालाराम",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 44,
+  "villageno": 46,
+  "votersname": "श्रीमती राखी",
+  "fathersname": "श्री हरीश कुमार",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ },
+ {
+  "voterno": 45,
+  "villageno": 47,
+  "votersname": "श्री विक्रम सिंह",
+  "fathersname": "श्री सरदार सिंह",
+  "category": "ग",
+  "address": "ग्राम- जहाँगीरपुर, पोस्ट- सलेमपुर (हाथरस)"
+ }
+]
