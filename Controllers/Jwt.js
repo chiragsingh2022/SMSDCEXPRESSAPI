@@ -1,6 +1,5 @@
 
 const jwt = require('jsonwebtoken');
-const jwtKey = 'key-highland'
 
 const validateToken = (req, res, next) => {
     let token = req.headers['authorization']; // Use 'Authorization' with a capital 'A'
@@ -13,7 +12,7 @@ const validateToken = (req, res, next) => {
         if (tokenParts.length === 2 && tokenParts[0] === 'Bearer') {
             const tokenValue = tokenParts[1];
             
-            jwt.verify(tokenValue, jwtKey, (err, validate) => {
+            jwt.verify(tokenValue, process.env.jwtKey, (err, validate) => {
                 if (err) {
                     res.status(401).send({ result: "/login" });
                 } else {
@@ -50,6 +49,5 @@ const validateToken = (req, res, next) => {
 
 module.exports = {
 jwt,
-jwtKey,
 validateToken,
 };

@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
@@ -7,7 +8,6 @@ const loginroute = require('./Routes/LoginRoute');
 const rssroute = require('./Routes/RssRoute');
 const connectDataBase = require('./db/Conn');
 const cors = require('cors');
-const { jwt, jwtKey } = require('./Controllers/Jwt');
 
 const corsOptions = {
     origin: "http://localhost:3000"
@@ -22,7 +22,7 @@ app.use("/api/rss",rssroute)
 
 const start = async () =>{
     try {
-        await connectDataBase();
+        await connectDataBase(process.env.MONGODB_URL);
         app.listen(port, () => {
             console.log(`app is listening port ${port}`);
         })

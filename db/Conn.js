@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
-uri = "mongodb+srv://chiragsingh322:mkw4l66UvaMH7wva@myapi.5rrxdvq.mongodb.net/SMSDC?retryWrites=true&w=majority";
-
-const connectDataBase = async () => {
+const connectDataBase = async (uri) => {
     try {
         const connectDb = await mongoose.connect(uri, {
             useNewUrlParser: true,
