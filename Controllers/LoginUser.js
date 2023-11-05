@@ -25,7 +25,7 @@
 
 const bcrypt = require('bcrypt'); // Import the bcrypt library for password hashing
 const Login = require('../Models/User'); // Replace 'your-login-model' with the actual model you're using
-const { jwt, jwtKey } = require('./Jwt')
+const { jwt } = require('./Jwt')
 
 const PostLogin = async (req, res) => {
     try {
@@ -47,7 +47,7 @@ const PostLogin = async (req, res) => {
         if (passwordMatch) {
             // Step 4: If passwords match, send a success response
             //console.log("Logged in")
-            jwt.sign({ user }, jwtKey, { expiresIn: "2h" }, (error, token) => {
+            jwt.sign({ user }, process.env.jwtKey, { expiresIn: "2h" }, (error, token) => {
                 if (error) {
                     res.send({ user: "something went wrong, please try after some time" });
                 }

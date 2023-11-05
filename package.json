@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "chirag_singh",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.6.0",
@@ -19,5 +19,8 @@
     "mongoose": "^7.5.0",
     "nodemon": "^3.0.1",
     "validator": "^13.11.0"
+  },
+  "gyp": {
+    "msvs_version": "2019"
   }
 }
