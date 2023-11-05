@@ -23,7 +23,7 @@
 // module.exports = PostLogin;
 
 
-const bcrypt = require('bcrypt'); // Import the bcrypt library for password hashing
+const bcrypt = require('bcryptjs'); // Import the bcrypt library for password hashing
 const Login = require('../Models/User'); // Replace 'your-login-model' with the actual model you're using
 const { jwt } = require('./Jwt')
 
