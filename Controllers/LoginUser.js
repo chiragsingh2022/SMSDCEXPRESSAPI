@@ -30,11 +30,11 @@ const { jwt } = require('./Jwt')
 const PostLogin = async (req, res) => {
     try {
         const userid = req.body.userid;
-        const userType = req.body.userType;
+        //const userType = req.body.userType;
         const password = req.body.password;
 
         // Step 1: Find the user by their userid
-        const user = await Login.findOne({ $and: [{ userid }, { userType }] });
+        const user = await Login.findOne(userid);
 
         if (!user) {
             // Step 2: If the user is not found, return an error
