@@ -34,7 +34,7 @@ const GetUser = async (req, res) => {
 
 const PostUser = async (req, res) => {
     try {
-        const { userid, password, userType } = req.body;
+        const { userid, password, userType, fname, lname, mobile } = req.body;
 
         // Step 1: Hash the user's password with bcrypt
         const hashedPassword = await bcrypt.hash(password, 10); // 10 is the number of salt rounds
@@ -44,6 +44,9 @@ const PostUser = async (req, res) => {
             userid,
             password: hashedPassword,
             userType,
+            fname,
+            lname,
+            mobile,
         });
 
         // Step 3: Save the user to the database
@@ -96,4 +99,4 @@ const DeleteUser = async (req, res) => {
     }
 };
 
-module.exports = {GetUser,PostUser,PatchUser,DeleteUser};
+module.exports = { GetUser, PostUser, PatchUser, DeleteUser };
