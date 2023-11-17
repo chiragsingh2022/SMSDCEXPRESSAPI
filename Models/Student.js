@@ -28,7 +28,10 @@ const studentSchema = new mongoose.Schema({
     email: {
         type: String,
         unique: [true, "Email must be unique"],
-        validator: [validator.isEmail("abc@gmail.com")]
+        validate:{
+            validator: validator.isEmail,
+            message:'Invalid email format',
+        }
     },
     phonenumber: {
         type: Number,
@@ -45,27 +48,27 @@ const studentSchema = new mongoose.Schema({
     state: {
         type: String
     },
-    attendance: [
-        {
-            date: {
-                type: Date,
+    // attendance: [
+    //     {
+    //         date: {
+    //             type: Date,
                 
-            },
-            status: {
-                type: String,
-                enum: ['present', 'absent', 'late'],
+    //         },
+    //         status: {
+    //             type: String,
+    //             enum: ['present', 'absent', 'late'],
                
-            },
-            attendancestatus:{
-                type:Boolean,
-                default:false,
-            }
-        }
-    ],
+    //         },
+    //         attendancestatus:{
+    //             type:Boolean,
+    //             default:false,
+    //         }
+    //     }
+    // ],
     
     created: {
         type: Date,
-        default: Date.now(),
+        default: Date.now,
     },
     createdby: {
         type: String

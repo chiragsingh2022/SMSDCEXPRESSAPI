@@ -32,13 +32,12 @@ const PostLogin = async (req, res) => {
         const userid = req.body.userid;
         //const userType = req.body.userType;
         const password = req.body.password;
-
         // Step 1: Find the user by their userid
-        const user = await Login.findOne(userid);
+        const user = await Login.findOne({ userid });
 
         if (!user) {
             // Step 2: If the user is not found, return an error
-            return res.status(404).send("User not found");
+            return res.status(404).send({error:"User not found"});
         }
 
         // Step 3: Compare the provided password with the hashed password in the database
@@ -47,20 +46,26 @@ const PostLogin = async (req, res) => {
         if (passwordMatch) {
             // Step 4: If passwords match, send a success response
             //console.log("Logged in")
-            jwt.sign({ user }, process.env.jwtKey, { expiresIn: "2h" }, (error, token) => {
-                if (error) {
-                    res.send({ user: "something went wrong, please try after some time" });
+            jwt.sign({ user }, process.env.jwtKey, { expiresIn: "2h" }, (err, token) => {
+                if (err) {
+                    res.send({ error: "something went wrong, please try after some time" });
                 }
                 res.status(200).send({ user, auth: token });
             })
-        } else {
-            // Step 5: If passwords do not match, send an error response
-            res.status(401).send("Wrong credentials");
         }
-    } catch (e) {
-        // Step 6: Handle any server errors that may occur
+        else {
+            // Step 5: If passwords do not match, send an error response
+            res.status(401).send({error:"Wrong credentials"});
+        }
+    } 
+    catch (e) {
+        if (e._message === 'User validation failed') {
+            res.status(400).send({ error: 'Invalid Email Format.' });
+        }
+        else{
         console.error(e);
-        res.status(500).send("Server error");
+        res.status(500).send({error:"Server error"});
+        }
     }
 };
 
