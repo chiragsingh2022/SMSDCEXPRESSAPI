@@ -50,17 +50,27 @@ const PostUser = async (req, res) => {
         });
 
         // Step 3: Save the user to the database
-        console.log(newUser);
+
         const saved = await newUser.save();
 
         if (saved) {
             res.status(201).send(saved);
-        } else {
-            res.status(404).send();
+        } 
+        else {
+            res.status(404).send({error:'Something went wrong please contact your administrator.'});
         }
-    } catch (e) {
-        console.log(e);
-        res.status(500).send(e);
+    }
+    catch (e) {
+        if (e.code === 11000) {
+            res.status(409).send({ error: "User Already Registered." });
+        }
+        else if (e._message === 'User validation failed') {
+            res.status(400).send({ error: 'Invalid Email Format.' });
+        }
+        else {
+            console.log(e);
+            res.status(500).send(e);
+        }
     }
 };
 

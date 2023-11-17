@@ -3,19 +3,21 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
 const studentroute = require("./Routes/StudentRoute");
+const attendanceroute = require('./Routes/AttendanceRoute');
 const userroute = require('./Routes/UserRoute');
 const loginroute = require('./Routes/LoginRoute');
 const rssroute = require('./Routes/RssRoute');
 const connectDataBase = require('./db/Conn');
 const cors = require('cors');
 
-const corsOptions = {
-    origin: "http://localhost:3000"
-}
+// const corsOptions = {
+//     origin: "http://localhost:3000"
+// }
 
 app.use(cors());
 app.use(express.json());
 app.use("/api/student",studentroute)
+app.use("/api/attendance",attendanceroute)
 app.use("/api/user",userroute)
 app.use("/api/login",loginroute)
 app.use("/api/rss",rssroute)

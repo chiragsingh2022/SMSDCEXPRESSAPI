@@ -14,16 +14,16 @@ const validateToken = (req, res, next) => {
             
             jwt.verify(tokenValue, process.env.jwtKey, (err, validate) => {
                 if (err) {
-                    res.status(401).send({ result: "/login" });
+                    res.status(401).send({ redirect: "/login",error:"You are not authorized." });
                 } else {
                     next();
                 }
             });
         } else {
-            res.status(401).send({ result: "Invalid token format" });
+            res.status(401).send({ error: "Invalid token format" });
         }
     } else {
-        res.status(403).send({ result: "/login" });
+        res.status(403).send({ redirect: "/login" });
     }
 }
 

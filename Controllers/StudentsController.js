@@ -55,21 +55,21 @@ const DeleteStudent = async (req, res) => {
         const _id = req.params.id;
         const saved = await Student.findByIdAndDelete(_id)
         if (saved) {
-            res.status(201).send(saved)
+            res.status(201).send(true);
         }
         else {
-            res.status(404).send()
+            res.status(404).send({ error: "Something went wrong" });
         }
     }
     catch (e) {
-        res.status(500).send(e)
+        res.status(500).send(e);
     }
 };
 
 const AddAttendance = async (req, res) => {
     try {
         const studentId = req.params.id; // Extract student ID from the route parameter
-        const { date, status,attendancestatus } = req.body; // Extract date and status from the request body
+        const { date, status, attendancestatus } = req.body; // Extract date and status from the request body
 
         // Find the student by ID
         const student = await Student.findById(studentId);
@@ -79,7 +79,7 @@ const AddAttendance = async (req, res) => {
         }
 
         // Add attendance for the student
-        student.attendance.push({ date, status,attendancestatus });
+        student.attendance.push({ date, status, attendancestatus });
         const saved = await student.save();
 
         if (saved) {
@@ -91,4 +91,4 @@ const AddAttendance = async (req, res) => {
         res.status(500).send(e);
     }
 };
-module.exports = { GetStudent, PostStudent, PatchStudent, DeleteStudent,AddAttendance };
+module.exports = { GetStudent, PostStudent, PatchStudent, DeleteStudent, AddAttendance };
