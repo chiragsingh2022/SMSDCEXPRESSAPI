@@ -1,4 +1,7 @@
 const Student = require("../Models/Student");
+const multer = require('multer');
+const storage = multer.memoryStorage(); // Store files in memory as buffers
+const upload = multer({ storage: storage });
 
 const GetStudent = async (req, res) => {
     try {
@@ -18,6 +21,13 @@ const GetStudent = async (req, res) => {
 const PostStudent = async (req, res) => {
     try {
         const postStudent = new Student(req.body);
+
+         // Check if there is a file attached to the request
+        //  if (req.file) {
+        //     // Assuming 'image' is the field name in the form for the image file
+        //     postStudent.image.data = req.file.buffer; // Store the image buffer in the 'data' field
+        //     postStudent.image.contentType = req.file.mimetype; // Store the MIME type of the image
+        // }
         const saved = await postStudent.save();
         if (saved) {
             res.status(201).send(saved)
@@ -27,6 +37,7 @@ const PostStudent = async (req, res) => {
         }
     }
     catch (e) {
+        console.log(e);
         res.status(500).send(e)
     }
 };
@@ -46,6 +57,7 @@ const PatchStudent = async (req, res) => {
         }
     }
     catch (e) {
+        console.log(e);
         res.status(500).send(e)
     }
 };
