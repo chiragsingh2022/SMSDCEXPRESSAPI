@@ -48,6 +48,11 @@ const studentSchema = new mongoose.Schema({
     state: {
         type: String
     },
+    image:String,
+    // image: {
+    //     data: Buffer, // Image data will be stored as Buffer
+    //     contentType: String // Mime type of the image (e.g., 'image/jpeg', 'image/png', etc.)
+    // },
     // attendance: [
     //     {
     //         date: {
