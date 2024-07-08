@@ -25,7 +25,8 @@
 
 const bcrypt = require('bcryptjs'); // Import the bcrypt library for password hashing
 const Login = require('../Models/User'); // Replace 'your-login-model' with the actual model you're using
-const { jwt } = require('./Jwt')
+const { jwt } = require('./Jwt');
+const { Console } = require('console');
 
 const PostLogin = async (req, res) => {
     try {
@@ -46,10 +47,23 @@ const PostLogin = async (req, res) => {
         if (passwordMatch) {
             // Step 4: If passwords match, send a success response
             //console.log("Logged in")
-            jwt.sign({ user }, process.env.jwtKey, { expiresIn: "2h" }, (err, token) => {
+            jwt.sign({ user }, process.env.jwtKey, { expiresIn: "5h" }, (err, token) => {
                 if (err) {
                     res.send({ error: "something went wrong, please try after some time" });
                 }
+                // const user = {
+                //     fname: usr.fname,
+                //     lname: usr.lname,
+                //     userid: usr.userid,
+                //     canviewrss: usr.canviewrss,
+                //     canviewregistration: usr.canviewregistration,
+                //     canviewstudent: usr.canviewstudent,
+                //     candeletestudent:usr.candeletestudent,
+                //     canaddstudent:usr.canaddstudent,
+                //     canupdatestudent:usr.canupdatestudent
+                // };
+                user.password = undefined;
+                user._id = null;
                 res.status(200).send({ user, auth: token });
             })
         }

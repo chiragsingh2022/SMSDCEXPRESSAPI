@@ -2,11 +2,14 @@ require("dotenv").config();
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
-const studentroute = require("./Routes/StudentRoute");
-const attendanceroute = require('./Routes/AttendanceRoute');
-const userroute = require('./Routes/UserRoute');
-const loginroute = require('./Routes/LoginRoute');
-const rssroute = require('./Routes/RssRoute');
+const studentRoute = require("./Routes/StudentRoute");
+const attendanceRoute = require('./Routes/AttendanceRoute');
+const attachmentRoute = require('./Routes/FileAttachmentRoute');
+const userRoute = require('./Routes/UserRoute');
+const loginRoute = require('./Routes/LoginRoute');
+const rssRoute = require('./Routes/RssRoute');
+const teacherRoute = require('./Routes/TeacherRoute');
+const masterRoute = require('./Routes/MasterRoute');
 const connectDataBase = require('./db/Conn');
 const cors = require('cors');
 
@@ -15,12 +18,15 @@ const cors = require('cors');
 // }
 
 app.use(cors());
-app.use(express.json());
-app.use("/api/student",studentroute)
-app.use("/api/attendance",attendanceroute)
-app.use("/api/user",userroute)
-app.use("/api/login",loginroute)
-app.use("/api/rss",rssroute)
+app.use(express.json({ limit: '2mb' }));
+app.use("/api/student",studentRoute)
+app.use("/api/attendance",attendanceRoute)
+app.use("/api/attachment",attachmentRoute)
+app.use("/api/user",userRoute)
+app.use("/api/login",loginRoute)
+app.use("/api/rss",rssRoute)
+app.use("/api/teacher",teacherRoute)
+app.use("/api/master",masterRoute)
 
 const start = async () =>{
     try {

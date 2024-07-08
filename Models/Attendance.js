@@ -1,19 +1,31 @@
 const mongoose = require('mongoose');
 
 const attendanceSchema = new mongoose.Schema({
-    studentid: {
+    studentId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Student',
     },
-    date: {
-        type: Date,
+    teacherId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Teacher',
     },
-    status: {
-        type: String,
+    subjectId: { 
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Subject', 
+       },
+    date: { 
+        type: Date, 
+        default: Date.now 
     },
-    mark: {
-        type: Boolean,
+    isPresent: { 
+        type: Boolean, 
+        default: false 
     },
+    
+    session:String,
+    semester:String,
+    updated:Date,
+    updatedBy:String,
     created: {
         type: Date,
         default: Date.now,
@@ -23,4 +35,4 @@ const attendanceSchema = new mongoose.Schema({
     },
 });
 
-module.exports = mongoose.model('Attendance',attendanceSchema);
+module.exports = mongoose.model('Attendance', attendanceSchema);

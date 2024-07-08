@@ -34,20 +34,20 @@ const GetUser = async (req, res) => {
 
 const PostUser = async (req, res) => {
     try {
-        const { userid, password, userType, fname, lname, mobile } = req.body;
-
+       // const { userid, password, userType, fname, lname, mobile } = req.body;
+        const newUser = new User(req.body);
         // Step 1: Hash the user's password with bcrypt
-        const hashedPassword = await bcrypt.hash(password, 10); // 10 is the number of salt rounds
-
+        const hashedPassword = await bcrypt.hash(newUser.password, 10); // 10 is the number of salt rounds
+        newUser.password = hashedPassword;
         // Step 2: Create a new user with the hashed password
-        const newUser = new User({
-            userid,
-            password: hashedPassword,
-            userType,
-            fname,
-            lname,
-            mobile,
-        });
+        // const newUser = new User({
+        //     userid,
+        //     password: hashedPassword,
+        //     userType,
+        //     fname,
+        //     lname,
+        //     mobile,
+        // });
 
         // Step 3: Save the user to the database
 

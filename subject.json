@@ -1,0 +1,27 @@
+[
+    {
+      "code": "PHY",
+      "description": "Physics",
+      "createdby": "admin"
+    },
+    {
+      "code": "CHEM",
+      "description": "Chemistry",
+      "createdby": "admin"
+    },
+    {
+      "code": "MATH",
+      "description": "Mathematics",
+      "createdby": "admin"
+    },
+    {
+      "code": "ZOO",
+      "description": "Zoology",
+      "createdby": "admin"
+    },
+    {
+      "code": "BOT",
+      "description": "Botany",
+      "createdby": "admin"
+    }
+  ]

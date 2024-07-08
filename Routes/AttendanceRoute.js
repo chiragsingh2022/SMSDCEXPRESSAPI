@@ -1,8 +1,9 @@
 const express = require('express');
-const {postAttendance} = require('../Controllers/AttendanceController');
+const {MarkAllAttendance,GetStudentsBySubjectAndSemester} = require('../Controllers/AttendanceController');
 const router = new express.Router();
 const {validateToken} = require('../Controllers/Jwt');
 
-router.route('/:id').post(validateToken,postAttendance);
+router.route('/:subjectId/:semester').get(validateToken,GetStudentsBySubjectAndSemester);
+router.route('/').post(validateToken,MarkAllAttendance);
 
 module.exports = router;
