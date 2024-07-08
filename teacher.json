@@ -1,0 +1,363 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phoneNumber": "1234567890",
+        "address": {
+            "street": "123 Main Street",
+            "city": "Cityville",
+            "state": "Stateville",
+            "zip": "12345",
+            "country": "Countryville"
+        },
+        "dateOfBirth": "1985-02-10",
+        "gender": "Male",
+        "qualification": "Ph.D. in Physics",
+        "experience": "8 years",
+        "joinDate": "2022-01-15",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane.smith@example.com",
+        "phoneNumber": "9876543210",
+        "address": {
+            "street": "456 Oak Street",
+            "city": "Townsville",
+            "state": "Provincetown",
+            "zip": "54321",
+            "country": "Countryland"
+        },
+        "dateOfBirth": "1980-07-25",
+        "gender": "Female",
+        "qualification": "M.Sc. in Chemistry",
+        "experience": "10 years",
+        "joinDate": "2021-02-20",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Michael",
+        "lastName": "Johnson",
+        "email": "michael.johnson@example.com",
+        "phoneNumber": "5551234567",
+        "address": {
+            "street": "789 Pine Avenue",
+            "city": "Villagetown",
+            "state": "Districtville",
+            "zip": "67890",
+            "country": "Countrytown"
+        },
+        "dateOfBirth": "1978-11-03",
+        "gender": "Male",
+        "qualification": "B.A. in History",
+        "experience": "12 years",
+        "joinDate": "2020-05-10",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Emily",
+        "lastName": "Williams",
+        "email": "emily.williams@example.com",
+        "phoneNumber": "9998765432",
+        "address": {
+            "street": "101 Cedar Lane",
+            "city": "Hilltop",
+            "state": "Meadowville",
+            "zip": "98765",
+            "country": "Countryhill"
+        },
+        "dateOfBirth": "1982-09-15",
+        "gender": "Female",
+        "qualification": "M.A. in English",
+        "experience": "9 years",
+        "joinDate": "2021-08-05",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Robert",
+        "lastName": "Anderson",
+        "email": "robert.anderson@example.com",
+        "phoneNumber": "3334445555",
+        "address": {
+            "street": "222 Elm Street",
+            "city": "Techville",
+            "state": "Innovationtown",
+            "zip": "54321",
+            "country": "Countrytech"
+        },
+        "dateOfBirth": "1987-04-20",
+        "gender": "Male",
+        "qualification": "M.Sc. in Computer Science",
+        "experience": "7 years",
+        "joinDate": "2022-03-01",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Sophia",
+        "lastName": "Miller",
+        "email": "sophia.miller@example.com",
+        "phoneNumber": "7778889999",
+        "address": {
+            "street": "456 Maple Avenue",
+            "city": "Artsville",
+            "state": "Creativetown",
+            "zip": "12345",
+            "country": "Countryart"
+        },
+        "dateOfBirth": "1984-06-12",
+        "gender": "Female",
+        "qualification": "B.F.A. in Fine Arts",
+        "experience": "11 years",
+        "joinDate": "2020-11-15",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Daniel",
+        "lastName": "Brown",
+        "email": "daniel.brown@example.com",
+        "phoneNumber": "1112223333",
+        "address": {
+            "street": "789 Galaxy Street",
+            "city": "Stargaze",
+            "state": "Astronomyville",
+            "zip": "98765",
+            "country": "Starryland"
+        },
+        "dateOfBirth": "1976-12-05",
+        "gender": "Male",
+        "qualification": "Ph.D. in Astrophysics",
+        "experience": "15 years",
+        "joinDate": "2021-06-20",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Olivia",
+        "lastName": "Jones",
+        "email": "olivia.jones@example.com",
+        "phoneNumber": "4445556666",
+        "address": {
+            "street": "101 Data Lane",
+            "city": "Analyticstown",
+            "state": "Mathland",
+            "zip": "54321",
+            "country": "Countrymath"
+        },
+        "dateOfBirth": "1988-08-30",
+        "gender": "Female",
+        "qualification": "M.Sc. in Mathematics",
+        "experience": "6 years",
+        "joinDate": "2020-09-10",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Christopher",
+        "lastName": "Taylor",
+        "email": "christopher.taylor@example.com",
+        "phoneNumber": "6667778888",
+        "address": {
+            "street": "777 Sports Street",
+            "city": "Athletictown",
+            "state": "Fitville",
+            "zip": "12345",
+            "country": "Countrysport"
+        },
+        "dateOfBirth": "1983-03-18",
+        "gender": "Male",
+        "qualification": "M.A. in Sports Science",
+        "experience": "10 years",
+        "joinDate": "2021-12-01",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Amanda",
+        "lastName": "Johnson",
+        "email": "amanda.johnson@example.com",
+        "phoneNumber": "5556667777",
+        "address": {
+            "street": "789 Pine Avenue",
+            "city": "Villagetown",
+            "state": "Districtville",
+            "zip": "67890",
+            "country": "Countrytown"
+        },
+        "dateOfBirth": "1983-08-15",
+        "gender": "Female",
+        "qualification": "B.A. in History",
+        "experience": "7 years",
+        "joinDate": "2020-06-10",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Samuel",
+        "lastName": "Brown",
+        "email": "samuel.brown@example.com",
+        "phoneNumber": "1112223333",
+        "address": {
+            "street": "101 Cedar Lane",
+            "city": "Hilltop",
+            "state": "Meadowville",
+            "zip": "98765",
+            "country": "Countryhill"
+        },
+        "dateOfBirth": "1986-02-20",
+        "gender": "Male",
+        "qualification": "M.A. in English",
+        "experience": "9 years",
+        "joinDate": "2021-05-15",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Sophie",
+        "lastName": "Smith",
+        "email": "sophie.smith@example.com",
+        "phoneNumber": "9998887777",
+        "address": {
+            "street": "456 Maple Avenue",
+            "city": "Sciencetown",
+            "state": "Labville",
+            "zip": "54321",
+            "country": "Countryscience"
+        },
+        "dateOfBirth": "1981-11-12",
+        "gender": "Female",
+        "qualification": "Ph.D. in Physics",
+        "experience": "8 years",
+        "joinDate": "2022-02-28",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "William",
+        "lastName": "Martin",
+        "email": "william.martin@example.com",
+        "phoneNumber": "3332221111",
+        "address": {
+            "street": "101 Data Lane",
+            "city": "Analyticstown",
+            "state": "Mathland",
+            "zip": "54321",
+            "country": "Countrymath"
+        },
+        "dateOfBirth": "1979-07-30",
+        "gender": "Male",
+        "qualification": "M.Sc. in Mathematics",
+        "experience": "10 years",
+        "joinDate": "2021-10-01",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Isabella",
+        "lastName": "Anderson",
+        "email": "isabella.anderson@example.com",
+        "phoneNumber": "7778889999",
+        "address": {
+            "street": "789 Nature Street",
+            "city": "Biotown",
+            "state": "Ecoville",
+            "zip": "12345",
+            "country": "Countrybio"
+        },
+        "dateOfBirth": "1984-04-25",
+        "gender": "Female",
+        "qualification": "M.Sc. in Biology",
+        "experience": "6 years",
+        "joinDate": "2020-09-10",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Daniel",
+        "lastName": "Clark",
+        "email": "daniel.clark@example.com",
+        "phoneNumber": "8889990000",
+        "address": {
+            "street": "222 Code Street",
+            "city": "Techville",
+            "state": "Innovationtown",
+            "zip": "54321",
+            "country": "Countrytech"
+        },
+        "dateOfBirth": "1980-12-08",
+        "gender": "Male",
+        "qualification": "Ph.D. in Computer Science",
+        "experience": "12 years",
+        "joinDate": "2022-04-15",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Mia",
+        "lastName": "Harris",
+        "email": "mia.harris@example.com",
+        "phoneNumber": "4445556666",
+        "address": {
+            "street": "456 Canvas Avenue",
+            "city": "Creativetown",
+            "state": "Imaginationville",
+            "zip": "12345",
+            "country": "Countryart"
+        },
+        "dateOfBirth": "1982-09-18",
+        "gender": "Female",
+        "qualification": "B.F.A. in Fine Arts",
+        "experience": "11 years",
+        "joinDate": "2020-11-15",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Ethan",
+        "lastName": "Cooper",
+        "email": "ethan.cooper@example.com",
+        "phoneNumber": "6665554444",
+        "address": {
+            "street": "777 Sports Street",
+            "city": "Athletictown",
+            "state": "Fitville",
+            "zip": "12345",
+            "country": "Countrysport"
+        },
+        "dateOfBirth": "1983-03-22",
+        "gender": "Male",
+        "qualification": "M.A. in Sports Science",
+        "experience": "14 years",
+        "joinDate": "2021-12-01",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Emma",
+        "lastName": "Miller",
+        "email": "emma.miller@example.com",
+        "phoneNumber": "1239874560",
+        "address": {
+            "street": "789 Lab Lane",
+            "city": "Sciencetown",
+            "state": "Researchville",
+            "zip": "54321",
+            "country": "Countryscience"
+        },
+        "dateOfBirth": "1986-06-01",
+        "gender": "Female",
+        "qualification": "Ph.D. in Chemistry",
+        "experience": "9 years",
+        "joinDate": "2022-03-01",
+        "createdby": "admin"
+    },
+    {
+        "firstName": "Liam",
+        "lastName": "Smith",
+        "email": "liam.smith@example.com",
+        "phoneNumber": "9876543210",
+        "address": {
+            "street": "101 Data Lane",
+            "city": "Analyticstown",
+            "state": "Mathland",
+            "zip": "54321",
+            "country": "Countrymath"
+        },
+        "dateOfBirth": "1985-08-30",
+        "gender": "Male",
+        "qualification": "M.Sc. in Mathematics",
+        "experience": "8 years",
+        "joinDate": "2021-05-10",
+        "createdby": "admin"
+    }
+]

@@ -2,19 +2,19 @@ const mongoose = require('mongoose');
 const validator = require('validator');
 
 const studentSchema = new mongoose.Schema({
-    studentid: {
+    admissionNumber: {
         type: String,
         required: [true, "Roll Number is required"],
         unique: [true, "Roll Number should be unique"]
     },
-    fname: {
+    firstName: {
         type: String,
         required: [true, "First Name must be entered"]
     },
-    mname: {
+    middleName: {
         type: String
     },
-    lname: {
+    lastName: {
         type: String
     },
     dob: {
@@ -33,8 +33,8 @@ const studentSchema = new mongoose.Schema({
             message:'Invalid email format',
         }
     },
-    phonenumber: {
-        type: Number,
+    phoneNumber: {
+        type: String,
         minLength: 10,
         maxLength: 10,
         required: [true, "Phone Number must be entered"]
@@ -49,27 +49,51 @@ const studentSchema = new mongoose.Schema({
         type: String
     },
     image:String,
-    // image: {
-    //     data: Buffer, // Image data will be stored as Buffer
-    //     contentType: String // Mime type of the image (e.g., 'image/jpeg', 'image/png', etc.)
-    // },
-    // attendance: [
-    //     {
-    //         date: {
-    //             type: Date,
-                
-    //         },
-    //         status: {
-    //             type: String,
-    //             enum: ['present', 'absent', 'late'],
-               
-    //         },
-    //         attendancestatus:{
-    //             type:Boolean,
-    //             default:false,
-    //         }
-    //     }
-    // ],
+
+    session: String,
+    wrNumber: String,
+    course: String,
+    semester: String,
+    enrollmentNumber: String,
+    aadharNumber: String,
+    fatherName: String,
+    fatherIncome: String,
+    fatherPhone: String,
+    fatherOccupation: String,
+    motherName: String,
+    motherIncome: String,
+    motherOccupation: String,
+    motherPhone: String,
+    zip: String,
+    country: String,
+    metricYear: String,
+    metricStatus: String,
+    metricRollNumber: String,
+    metricBoard: String,
+    metricTotalMarks: String,
+    metricObtainedMarks: String,
+    metricPercent: String,
+    metricSchoolName: String,
+    metricSubject: String,
+    interBoard: String,
+    interYear: String,
+    interObtainedMark: String,
+    interTotalMark: String,
+    interPercent: String,
+    interSchoolName: String,
+    interStatus: String,
+    interSubject: String,
+    interRollNumber: String,
+    graduationBoard: String,
+    graduationCollegeName: String,
+    graduationCourse: String,
+    graduationObtainedMark: String,
+    graduationPercent: String,
+    graduationStatus: String,
+    graduationTotalMark: String,
+    graduationYear: String,
+    graduationRollNumber: String,
+    graduationSubject: String,
     
     created: {
         type: Date,
@@ -77,7 +101,19 @@ const studentSchema = new mongoose.Schema({
     },
     createdby: {
         type: String
-    }
+    },
+    deleted: {
+        type: Date,
+    },
+    deletedBy: {
+        type: String
+    },
+    modified: {
+        type: Date,
+    },
+    modifiedBy: {
+        type: String
+    },
 })
 
 module.exports = mongoose.model('Student', studentSchema);
